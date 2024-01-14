@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8A77E862B5318E100F3F534 /* BikeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77E852B5318E100F3F534 /* BikeAppApp.swift */; };
+		A8A77E882B5318E100F3F534 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77E872B5318E100F3F534 /* ContentView.swift */; };
+		A8A77E8A2B5318E200F3F534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A77E892B5318E200F3F534 /* Assets.xcassets */; };
+		A8A77E8E2B5318E200F3F534 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A77E8D2B5318E200F3F534 /* Preview Assets.xcassets */; };
+		A8A77E982B5318E200F3F534 /* BikeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77E972B5318E200F3F534 /* BikeAppTests.swift */; };
+		A8A77EA22B5318E200F3F534 /* BikeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77EA12B5318E200F3F534 /* BikeAppUITests.swift */; };
+		A8A77EA42B5318E200F3F534 /* BikeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77EA32B5318E200F3F534 /* BikeAppUITestsLaunchTests.swift */; };
+		A8A77EB12B53193E00F3F534 /* AddBikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77EB02B53193E00F3F534 /* AddBikeView.swift */; };
+		A8A77EB32B53197F00F3F534 /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77EB22B53197F00F3F534 /* Bike.swift */; };
+		A8A77EB52B5319BF00F3F534 /* BikeDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77EB42B5319BF00F3F534 /* BikeDatabaseManager.swift */; };
+		A8A77EB72B5319DB00F3F534 /* BikeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77EB62B5319DB00F3F534 /* BikeDetailsView.swift */; };
+		A8A77EB92B5319F900F3F534 /* BikeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77EB82B5319F900F3F534 /* BikeListCell.swift */; };
+		A8A77EBB2B531A1E00F3F534 /* BikeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77EBA2B531A1E00F3F534 /* BikeListViewModel.swift */; };
+		A8A77EBD2B531A4E00F3F534 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77EBC2B531A4E00F3F534 /* Colors.swift */; };
+		A8A77EBF2B544D7700F3F534 /* BikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77EBE2B544D7700F3F534 /* BikeService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8A77E942B5318E200F3F534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8A77E7A2B5318E100F3F534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8A77E812B5318E100F3F534;
+			remoteInfo = BikeApp;
+		};
+		A8A77E9E2B5318E200F3F534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8A77E7A2B5318E100F3F534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8A77E812B5318E100F3F534;
+			remoteInfo = BikeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8A77E822B5318E100F3F534 /* BikeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A77E852B5318E100F3F534 /* BikeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAppApp.swift; sourceTree = "<group>"; };
+		A8A77E872B5318E100F3F534 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8A77E892B5318E200F3F534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8A77E8B2B5318E200F3F534 /* BikeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BikeApp.entitlements; sourceTree = "<group>"; };
+		A8A77E8D2B5318E200F3F534 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8A77E932B5318E200F3F534 /* BikeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A77E972B5318E200F3F534 /* BikeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAppTests.swift; sourceTree = "<group>"; };
+		A8A77E9D2B5318E200F3F534 /* BikeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A77EA12B5318E200F3F534 /* BikeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAppUITests.swift; sourceTree = "<group>"; };
+		A8A77EA32B5318E200F3F534 /* BikeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8A77EB02B53193E00F3F534 /* AddBikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBikeView.swift; sourceTree = "<group>"; };
+		A8A77EB22B53197F00F3F534 /* Bike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike.swift; sourceTree = "<group>"; };
+		A8A77EB42B5319BF00F3F534 /* BikeDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeDatabaseManager.swift; sourceTree = "<group>"; };
+		A8A77EB62B5319DB00F3F534 /* BikeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeDetailsView.swift; sourceTree = "<group>"; };
+		A8A77EB82B5319F900F3F534 /* BikeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeListCell.swift; sourceTree = "<group>"; };
+		A8A77EBA2B531A1E00F3F534 /* BikeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeListViewModel.swift; sourceTree = "<group>"; };
+		A8A77EBC2B531A4E00F3F534 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A8A77EBE2B544D7700F3F534 /* BikeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8A77E7F2B5318E100F3F534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A77E902B5318E200F3F534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A77E9A2B5318E200F3F534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8A77E792B5318E100F3F534 = {
+			isa = PBXGroup;
+			children = (
+				A8A77E842B5318E100F3F534 /* BikeApp */,
+				A8A77E962B5318E200F3F534 /* BikeAppTests */,
+				A8A77EA02B5318E200F3F534 /* BikeAppUITests */,
+				A8A77E832B5318E100F3F534 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8A77E832B5318E100F3F534 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8A77E822B5318E100F3F534 /* BikeApp.app */,
+				A8A77E932B5318E200F3F534 /* BikeAppTests.xctest */,
+				A8A77E9D2B5318E200F3F534 /* BikeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8A77E842B5318E100F3F534 /* BikeApp */ = {
+			isa = PBXGroup;
+			children = (
+				A8A77E852B5318E100F3F534 /* BikeAppApp.swift */,
+				A8A77E872B5318E100F3F534 /* ContentView.swift */,
+				A8A77EBC2B531A4E00F3F534 /* Colors.swift */,
+				A8A77EBA2B531A1E00F3F534 /* BikeListViewModel.swift */,
+				A8A77EB62B5319DB00F3F534 /* BikeDetailsView.swift */,
+				A8A77EBE2B544D7700F3F534 /* BikeService.swift */,
+				A8A77EB02B53193E00F3F534 /* AddBikeView.swift */,
+				A8A77EB22B53197F00F3F534 /* Bike.swift */,
+				A8A77EB42B5319BF00F3F534 /* BikeDatabaseManager.swift */,
+				A8A77EB82B5319F900F3F534 /* BikeListCell.swift */,
+				A8A77E892B5318E200F3F534 /* Assets.xcassets */,
+				A8A77E8B2B5318E200F3F534 /* BikeApp.entitlements */,
+				A8A77E8C2B5318E200F3F534 /* Preview Content */,
+			);
+			path = BikeApp;
+			sourceTree = "<group>";
+		};
+		A8A77E8C2B5318E200F3F534 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A8A77E8D2B5318E200F3F534 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8A77E962B5318E200F3F534 /* BikeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8A77E972B5318E200F3F534 /* BikeAppTests.swift */,
+			);
+			path = BikeAppTests;
+			sourceTree = "<group>";
+		};
+		A8A77EA02B5318E200F3F534 /* BikeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8A77EA12B5318E200F3F534 /* BikeAppUITests.swift */,
+				A8A77EA32B5318E200F3F534 /* BikeAppUITestsLaunchTests.swift */,
+			);
+			path = BikeAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8A77E812B5318E100F3F534 /* BikeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8A77EA72B5318E200F3F534 /* Build configuration list for PBXNativeTarget "BikeApp" */;
+			buildPhases = (
+				A8A77E7E2B5318E100F3F534 /* Sources */,
+				A8A77E7F2B5318E100F3F534 /* Frameworks */,
+				A8A77E802B5318E100F3F534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BikeApp;
+			productName = BikeApp;
+			productReference = A8A77E822B5318E100F3F534 /* BikeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8A77E922B5318E200F3F534 /* BikeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8A77EAA2B5318E200F3F534 /* Build configuration list for PBXNativeTarget "BikeAppTests" */;
+			buildPhases = (
+				A8A77E8F2B5318E200F3F534 /* Sources */,
+				A8A77E902B5318E200F3F534 /* Frameworks */,
+				A8A77E912B5318E200F3F534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8A77E952B5318E200F3F534 /* PBXTargetDependency */,
+			);
+			name = BikeAppTests;
+			productName = BikeAppTests;
+			productReference = A8A77E932B5318E200F3F534 /* BikeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8A77E9C2B5318E200F3F534 /* BikeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8A77EAD2B5318E200F3F534 /* Build configuration list for PBXNativeTarget "BikeAppUITests" */;
+			buildPhases = (
+				A8A77E992B5318E200F3F534 /* Sources */,
+				A8A77E9A2B5318E200F3F534 /* Frameworks */,
+				A8A77E9B2B5318E200F3F534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8A77E9F2B5318E200F3F534 /* PBXTargetDependency */,
+			);
+			name = BikeAppUITests;
+			productName = BikeAppUITests;
+			productReference = A8A77E9D2B5318E200F3F534 /* BikeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8A77E7A2B5318E100F3F534 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					A8A77E812B5318E100F3F534 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					A8A77E922B5318E200F3F534 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A8A77E812B5318E100F3F534;
+					};
+					A8A77E9C2B5318E200F3F534 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A8A77E812B5318E100F3F534;
+					};
+				};
+			};
+			buildConfigurationList = A8A77E7D2B5318E100F3F534 /* Build configuration list for PBXProject "BikeApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8A77E792B5318E100F3F534;
+			productRefGroup = A8A77E832B5318E100F3F534 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8A77E812B5318E100F3F534 /* BikeApp */,
+				A8A77E922B5318E200F3F534 /* BikeAppTests */,
+				A8A77E9C2B5318E200F3F534 /* BikeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8A77E802B5318E100F3F534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A77E8E2B5318E200F3F534 /* Preview Assets.xcassets in Resources */,
+				A8A77E8A2B5318E200F3F534 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A77E912B5318E200F3F534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A77E9B2B5318E200F3F534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8A77E7E2B5318E100F3F534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A77EB92B5319F900F3F534 /* BikeListCell.swift in Sources */,
+				A8A77EBD2B531A4E00F3F534 /* Colors.swift in Sources */,
+				A8A77EB72B5319DB00F3F534 /* BikeDetailsView.swift in Sources */,
+				A8A77EB32B53197F00F3F534 /* Bike.swift in Sources */,
+				A8A77E882B5318E100F3F534 /* ContentView.swift in Sources */,
+				A8A77EB12B53193E00F3F534 /* AddBikeView.swift in Sources */,
+				A8A77EBB2B531A1E00F3F534 /* BikeListViewModel.swift in Sources */,
+				A8A77EB52B5319BF00F3F534 /* BikeDatabaseManager.swift in Sources */,
+				A8A77EBF2B544D7700F3F534 /* BikeService.swift in Sources */,
+				A8A77E862B5318E100F3F534 /* BikeAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A77E8F2B5318E200F3F534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A77E982B5318E200F3F534 /* BikeAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A77E992B5318E200F3F534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A77EA22B5318E200F3F534 /* BikeAppUITests.swift in Sources */,
+				A8A77EA42B5318E200F3F534 /* BikeAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8A77E952B5318E200F3F534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8A77E812B5318E100F3F534 /* BikeApp */;
+			targetProxy = A8A77E942B5318E200F3F534 /* PBXContainerItemProxy */;
+		};
+		A8A77E9F2B5318E200F3F534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8A77E812B5318E100F3F534 /* BikeApp */;
+			targetProxy = A8A77E9E2B5318E200F3F534 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A8A77EA52B5318E200F3F534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8A77EA62B5318E200F3F534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A8A77EA82B5318E200F3F534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BikeApp/BikeApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BikeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = P247SWJA2C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cristinel.BikeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8A77EA92B5318E200F3F534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BikeApp/BikeApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BikeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = P247SWJA2C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cristinel.BikeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8A77EAB2B5318E200F3F534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P247SWJA2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cristinel.BikeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BikeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BikeApp";
+			};
+			name = Debug;
+		};
+		A8A77EAC2B5318E200F3F534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P247SWJA2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cristinel.BikeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BikeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BikeApp";
+			};
+			name = Release;
+		};
+		A8A77EAE2B5318E200F3F534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P247SWJA2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cristinel.BikeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BikeApp;
+			};
+			name = Debug;
+		};
+		A8A77EAF2B5318E200F3F534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P247SWJA2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cristinel.BikeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BikeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8A77E7D2B5318E100F3F534 /* Build configuration list for PBXProject "BikeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8A77EA52B5318E200F3F534 /* Debug */,
+				A8A77EA62B5318E200F3F534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8A77EA72B5318E200F3F534 /* Build configuration list for PBXNativeTarget "BikeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8A77EA82B5318E200F3F534 /* Debug */,
+				A8A77EA92B5318E200F3F534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8A77EAA2B5318E200F3F534 /* Build configuration list for PBXNativeTarget "BikeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8A77EAB2B5318E200F3F534 /* Debug */,
+				A8A77EAC2B5318E200F3F534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8A77EAD2B5318E200F3F534 /* Build configuration list for PBXNativeTarget "BikeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8A77EAE2B5318E200F3F534 /* Debug */,
+				A8A77EAF2B5318E200F3F534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8A77E7A2B5318E100F3F534 /* Project object */;
+}
